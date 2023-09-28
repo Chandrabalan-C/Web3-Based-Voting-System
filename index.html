@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Dapp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <h1 class="h1">Voting D-app</h1>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Candidates ID</th>
+          <th>Candidates</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td id="1"></td>
+          <td id="candidate1"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td id="2"></td>
+          <td id="candidate2"></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td id="3"></td>
+          <td id="candidate3"></td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="text" id="candidate" placeholder="Candidates ID" />
+    <button onclick="vote()" class="btn">Vote</button>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
