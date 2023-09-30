@@ -1,18 +1,22 @@
-/* Reset default styles */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* Global Styles */
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+
+
+/* Navigation bar and header Styles */
 nav {
   background-color: black;
   color: white;
   padding: 10px;
 }
+
 li,
 ul,
 h1 {
@@ -22,9 +26,11 @@ h1 {
   font-weight: normal;
   font-family: "Courier New", Courier, monospace;
 }
+
 #head1{
   word-spacing: 10px;
 }
+
 ul {
   margin-left: 51%;
 }
@@ -39,19 +45,17 @@ li:hover {
   background-color:gray;
 }
 
-.menu ul {
-  list-style: none;
+
+/*head2 Styles*/
+h2 {
+  margin-top: 15%;
+  margin-left: 20%;
+  font-style: oblique;
+  word-spacing: 10px;
+  font-size: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.menu ul li {
-  display: inline;
-  margin-right: 20px;
-}
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 
 /* Content Section Styles */
 .content {
@@ -75,15 +79,8 @@ li:hover {
 .right-content {
   flex: 2;
 }
-/*head2 Styles*/
-h2 {
-  margin-top: 15%;
-  margin-left: 20%;
-  font-style: oblique;
-  word-spacing: 10px;
-  font-size: 2em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+
+
 /* Table Styles */
 table {
   width: 80%;
@@ -107,12 +104,20 @@ table tr:nth-child(even) {
   background-color: #e0d8d8ba;
 }
 
+
+/* Input Styles */
 input[type="text"] {
   padding: 8px;
   border-radius: 5px;
   margin-right: 10px;
 }
 
+#candidate {
+  margin-left: 28%;
+}
+
+
+/* Button Styles */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -128,89 +133,8 @@ input[type="text"] {
   background-color: #0056b3;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
 
-  .left-content {
-    padding-right: 0;
-  }
-
-  .menu ul {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .menu ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 999;
-  }
-
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .menu {
-    display: none;
-    width: 200px;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: -200px;
-    background-color: #333;
-    transition: 0.4s;
-    z-index: 998;
-  }
-
-  .menu ul {
-    padding: 20px;
-    list-style: none;
-  }
-
-  .menu ul li {
-    margin-bottom: 10px;
-  }
-
-  .menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  /* Toggle menu when menu-toggle is clicked */
-  .menu-toggle.active + .menu {
-    right: 0;
-  }
-}
-.center-content {
-  flex: 1;
-}
-
-.center-content p {
-  font-size: 15px;
-  margin: 0;
-}
-
-#candidate {
-  margin-left: 28%;
-}
-
+/* Copy right Styles */
 #copy {
   margin-left: 85%;
   margin-top: 5%;
