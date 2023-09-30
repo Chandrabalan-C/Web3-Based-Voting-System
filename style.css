@@ -8,8 +8,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
-
 /* Navigation bar and header Styles */
 nav {
   background-color: black;
@@ -27,12 +25,12 @@ h1 {
   font-family: "Courier New", Courier, monospace;
 }
 
-#head1{
+#head1 {
   word-spacing: 10px;
 }
 
 ul {
-  margin-left: 51%;
+  margin-left: 45%;
 }
 
 li {
@@ -42,9 +40,8 @@ li {
 
 li:hover {
   color: white;
-  background-color:gray;
+  background-color: gray;
 }
-
 
 /*head2 Styles*/
 h2 {
@@ -55,7 +52,6 @@ h2 {
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 /* Content Section Styles */
 .content {
@@ -80,7 +76,6 @@ h2 {
   flex: 2;
 }
 
-
 /* Table Styles */
 table {
   width: 80%;
@@ -104,7 +99,6 @@ table tr:nth-child(even) {
   background-color: #e0d8d8ba;
 }
 
-
 /* Input Styles */
 input[type="text"] {
   padding: 8px;
@@ -115,7 +109,6 @@ input[type="text"] {
 #candidate {
   margin-left: 28%;
 }
-
 
 /* Button Styles */
 .btn {
@@ -132,7 +125,6 @@ input[type="text"] {
 .btn:hover {
   background-color: #0056b3;
 }
-
 
 /* Copy right Styles */
 #copy {
