@@ -8,21 +8,35 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
-/* Header Styles */
-header {
-  background-color: #0056b3;
-  border-bottom: 2px solid #0056b3;
+nav {
+  background-color: black;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
+}
+li,
+ul,
+h1 {
+  display: inline;
+  padding: 15px;
+  color: white;
+  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
+}
+#head1{
+  word-spacing: 10px;
+}
+ul {
+  margin-left: 51%;
 }
 
-.logo h1 {
-  font-size: 24px;
-  margin: 0;
+li {
+  color: rgba(189, 185, 185, 0.993);
+  cursor: pointer;
+}
+
+li:hover {
+  color: white;
+  background-color:gray;
 }
 
 .menu ul {
@@ -62,13 +76,13 @@ header {
   flex: 2;
 }
 /*head2 Styles*/
-h2{
+h2 {
   margin-top: 15%;
   margin-left: 20%;
   font-style: oblique;
   word-spacing: 10px;
   font-size: 2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* Table Styles */
 table {
@@ -107,12 +121,12 @@ input[type="text"] {
   background-color: #007bff;
   border-radius: 4px;
   border: none;
+  margin-left: 3%;
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
-
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -193,4 +207,11 @@ input[type="text"] {
   margin: 0;
 }
 
+#candidate {
+  margin-left: 28%;
+}
 
+#copy {
+  margin-left: 85%;
+  margin-top: 5%;
+}

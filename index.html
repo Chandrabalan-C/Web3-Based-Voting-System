@@ -7,24 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>DIGITAL INDIA ELECTION PORTAL</h1>
+    <div class="header">
       <nav>
-        <a
-          href=""
-          style="color: aliceblue; margin-right: 25px; text-decoration: none"
-          >Home</a
-        >
-
-        <a
-          href=""
-          style="color: aliceblue; margin-right: 25px; text-decoration: none"
-          >Contact</a
-        >
-        <a href="" style="color: aliceblue; text-decoration: none">About us</a>
+        <h1 id="head1">DIGITAL INDIA ELECTION PORTAL</h1>
+        <ul>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About Us</li>
+        </ul>
       </nav>
-    </header>
-    <br />
+    </div>
+    <br>
     <section class="content">
       <br />
       <br />
@@ -64,22 +57,15 @@
         <br />
         <br />
         <br />
-        <input
-          type="text"
-          id="candidate"
-          placeholder="Candidate ID"
-          style="margin-left: 28%"
-        />
-        <button onclick="vote()" class="btn" style="margin-left: 3%">
-          Vote
-        </button>
+        <input type="text" id="candidate" placeholder="Candidate ID" />
+        <button onclick="vote()" class="btn">Vote</button>
         <br />
         <br />
         <h2>VOTE FOR RIGHT INDIA!</h2>
       </div>
     </section>
 
-    <p style="margin-left: 85%; margin-top: 5%">&copy; Chandrabalan</p>
+    <p id="copy">&copy; Chandrabalan</p>
     <script src="script.js"></script>
   </body>
 </html>
