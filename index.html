@@ -7,46 +7,79 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
+    <header>
+      <h1>DIGITAL INDIA ELECTION PORTAL</h1>
       <nav>
-        <h1 class="h1">Voting D-app</h1>
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-        </ul>
+        <a
+          href=""
+          style="color: aliceblue; margin-right: 25px; text-decoration: none"
+          >Home</a
+        >
+
+        <a
+          href=""
+          style="color: aliceblue; margin-right: 25px; text-decoration: none"
+          >Contact</a
+        >
+        <a href="" style="color: aliceblue; text-decoration: none">About us</a>
       </nav>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Candidates ID</th>
-          <th>Candidates</th>
-          <th>Votes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td id="1"></td>
-          <td id="candidate1"></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td id="2"></td>
-          <td id="candidate2"></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td id="3"></td>
-          <td id="candidate3"></td>
-        </tr>
-      </tbody>
-    </table>
-    <input type="text" id="candidate" placeholder="Candidates ID" />
-    <button onclick="vote()" class="btn">Vote</button>
-    <script src="./node_modules/web3/dist/web3.min.js"></script>
-    <script src="./script.js"></script>
+    </header>
+    <br />
+    <section class="content">
+      <br />
+      <br />
+      <div class="left-content">
+        <!-- Place your picture here -->
+
+        <img src="images/body01.webp" alt="Candidate Image" />
+      </div>
+
+      <div class="right-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Candidate ID</th>
+              <th>Candidate</th>
+              <th>Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td id="1">BJP - Bharatiya Janta Party</td>
+              <td id="candidate1">0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td id="2">INC - The Indian National Congress</td>
+              <td id="candidate2">0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td id="3">BSP - Bahujan Samaj Party</td>
+              <td id="candidate3">0</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <br />
+        <input
+          type="text"
+          id="candidate"
+          placeholder="Candidate ID"
+          style="margin-left: 28%"
+        />
+        <button onclick="vote()" class="btn" style="margin-left: 3%">
+          Vote
+        </button>
+        <br />
+        <br />
+        <h2>VOTE FOR RIGHT INDIA!</h2>
+      </div>
+    </section>
+
+    <p style="margin-left: 85%; margin-top: 5%">&copy; Chandrabalan</p>
+    <script src="script.js"></script>
   </body>
 </html>
