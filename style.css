@@ -1,91 +1,133 @@
-body {
-  font-family: "open Sans", sans-serif;
-  /* margin: 0 auto;
-  padding: 20px;
-  width: 600px;
-  background-color: #add8e6; */
-}
-.h1{
+/* Global Styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
+/* Navigation bar and header Styles */
 nav {
   background-color: black;
   color: white;
   padding: 10px;
 }
+
 li,
 ul,
 h1 {
   display: inline;
-  padding: 10px;
+  padding: 15px;
+  color: white;
+  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
 }
+
+#head1 {
+  word-spacing: 10px;
+}
+
 ul {
-  margin-left: 65%;
+  margin-left: 50%;
 }
 
 li {
-  color: rgb(189, 184, 184);
+  color: rgba(189, 185, 185, 0.993);
   cursor: pointer;
 }
 
 li:hover {
   color: white;
-  background-color:gray;
+  background-color: gray;
 }
 
+/*head2 Styles*/
+h2 {
+  margin-top: 15%;
+  margin-left: 20%;
+  font-style: oblique;
+  word-spacing: 10px;
+  font-size: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
-.about {
-  margin-top: 20px;
-  text-align: center;
+/* Content Section Styles */
+.content {
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
-p{
-    text-align: center;
+.left-content {
+  flex: 1;
+  padding-right: 20px;
 }
 
-.contact{
-    background-color:black;
-    color:white;
-    text-align: center;
-    padding: 40px;
-    
+.left-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 25%;
 }
 
+.right-content {
+  flex: 2;
+}
+
+/* Table Styles */
 table {
-  margin-top: 100px;
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   background-color: white;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
-th,
-td {
+table th,
+table td {
   padding: 8px;
   border: 1px solid #ccc;
 }
 
-tr:nth-child(even) {
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
   background-color: #e0d8d8ba;
 }
 
-input {
+/* Input Styles */
+input[type="text"] {
   padding: 8px;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
+#candidate {
+  margin-left: 28%;
+}
+
+/* Button Styles */
 .btn {
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  margin: 30px;
+  margin: 10px 0;
   background-color: #007bff;
   border-radius: 4px;
   border: none;
+  margin-left: 3%;
 }
 
 .btn:hover {
-  background-color: #0069;
+  background-color: #0056b3;
+}
+
+/* Copy right Styles */
+#copy {
+  margin-left: 85%;
+  margin-top: 5%;
 }

@@ -9,44 +9,69 @@
   <body>
     <div class="header">
       <nav>
-        <h1 class="h1">Voting D-app</h1>
+        <h1 id="head1">DIGITAL INDIA ELECTION PORTAL</h1>
         <ul>
           <li>Home</li>
-          <li>Products</li>
+          <li>Contact</li>
           <li>About Us</li>
-          <li>Contact Us</li>
         </ul>
       </nav>
     </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Candidates ID</th>
-          <th>Candidates</th>
-          <th>Votes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td id="1"></td>
-          <td id="candidate1"></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td id="2"></td>
-          <td id="candidate2"></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td id="3"></td>
-          <td id="candidate3"></td>
-        </tr>
-      </tbody>
-    </table>
-    <input type="text" id="candidate" placeholder="Candidates ID" />
-    <button onclick="vote()" class="btn">Vote</button>
+    <br>
+    <section class="content">
+      <br />
+      <br />
+      <div class="left-content">
+        <!-- Place your picture here -->
+
+        <img src="images/body01.webp" alt="Candidate Image" />
+      </div>
+
+      <div id="address"><p>mhehgehefhkddvdvh</p></div>
+
+      <div class="right-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Candidate ID</th>
+              <th>Candidate</th>
+              <th>Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <!-- BJP - Bharatiya Janta Party -->
+              <td id="1"></td> 
+              <td id="candidate1">0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <!-- INC - The Indian National Congress -->
+              <td id="2"></td>
+              <td id="candidate2">0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <!-- BSP - Bahujan Samaj Party -->
+              <td id="3"></td>
+              <td id="candidate3">0</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <br />
+        <input type="text" id="candidate" placeholder="Candidate ID" />
+        <button onclick="vote()" class="btn">Vote</button>
+        <br />
+        <br />
+        <h2>VOTE FOR RIGHT INDIA!</h2>
+      </div>
+    </section>
+
+    <p id="copy">&copy; Chandrabalan</p>
     <script src="./node_modules/web3/dist/web3.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
