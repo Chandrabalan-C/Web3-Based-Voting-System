@@ -1,3 +1,5 @@
+// const parseArgs = require("npx/parse-args");
+
 const web3 = new Web3(window.ethereum);
 var account;
 const CONTRACT_ADDR = "0x2d73b2e42Fa172755b23819f68141C0950A40915";
@@ -108,18 +110,25 @@ const CONTRACT_ABI = [
 	}
 ];
 
+let user = document.getElementById("address");
+
 const contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDR);
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.ethereum) {
-    ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
-      account = accounts[0];
-      console.log(account);
-    });
-  } else {
-    console.error("Please install Metamask");
-    window.alert("Please install Metamask");
-  }
+	try{
+		if (window.ethereum) {
+			ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
+			  account = accounts[0];
+			  console.log(account);
+			//   user.innerHTML = "" + account;
+			});
+		  } else {
+			window.alert("Please install Metamask");
+		  }
+	}
+	catch(err){
+		console.log("Metamask is not installed" + err);
+	}
 
   contract.methods
     .candidateCount()
